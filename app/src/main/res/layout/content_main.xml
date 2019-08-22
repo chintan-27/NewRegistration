@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:background="@drawable/white2">
+
+        <ImageView android:src="@drawable/n"
+            android:layout_width="wrap_content"
+            android:layout_height="111dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@android:color/background_dark"
+                android:hint="Name"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@android:color/background_dark"
+                android:hint="ID"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@android:color/background_dark"
+                android:hint="Age"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@android:color/background_dark"
+                android:hint="Branch"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MALE" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEMALE" />
+            <RadioButton
+                android:id="@+id/radioOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OTHERS" />
+
+        </RadioGroup>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/submit_area"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:fontFamily="cursive"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="#A8A8A8"
+            android:textStyle="bold"
+            android:background="@drawable/button_shape"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+
+            android:text="Submit"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/last_Entry"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:fontFamily="cursive"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="#A8A8A8"
+            android:textStyle="bold"
+            android:background="@drawable/button_shape"
+            android:text="Last Entry"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/file_saver"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:fontFamily="cursive"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="#A8A8A8"
+            android:textStyle="bold"
+            android:background="@drawable/button_shape"
+            android:text="All previous entries"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"/>
+
+    </LinearLayout>
+</ScrollView>
